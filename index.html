@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz da atividade</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>O que você entendeu sobre câncer de pele e sobre Acne?</h1>
+        <form id="quizForm" action="resultados.html" method="post">
+            <div class="question">
+                <p>1. Qual dos raios solares causa câncer de pele?</p>
+                <label><input type="radio" name="q1" value="a"> Raios UVA</label>
+                <label><input type="radio" name="q1" value="b"> Raios UVB</label>
+                <label><input type="radio" name="q1" value="c"> Ambos os raios UVA e UVB</label>
+                <label><input type="radio" name="q1" value="d"> Nenhuma das alternativas acima</label>
+            </div>
+
+            <div class="question">
+                <p>2. Verdadeiro ou falso: o câncer de pele é encontrado apenas em áreas do corpo expostas ao sol?</p>
+                <label><input type="radio" name="q2" value="a"> Verdadeiro</label>
+                <label><input type="radio" name="q2" value="b"> Falso</label>
+            </div>
+
+            <div class="question">
+                <p>3. Por que é desaconselhável espremer espinhas?</p>
+                <label><input type="radio" name="q3" value="a"> Aumenta a inflamação, prolongando o período de cura e aumentando o risco de hiperpigmentação.</label>
+                <label><input type="radio" name="q3" value="b"> Diminui a inflamação, acelerando o processo de cicatrização.</label>
+                <label><input type="radio" name="q3" value="c"> Reduz o risco de hiperpigmentação pós-inflamatória.</label>
+                <label><input type="radio" name="q3" value="d"> Melhora a comunicação com os seios da face, evitando infecções.</label>
+            </div>
+
+            <div class="question">
+                <p>4. Como o Ministério da Saúde classifica a acne de acordo com a gravidade das lesões na pele?</p>
+                <label><input type="radio" name="q4" value="a"> Acne Grau I: cravos, espinhas pequenas e lesões inflamadas.</label>
+                <label><input type="radio" name="q4" value="b"> Acne Grau II: apenas cravos, sem lesões inflamatórias.</label>
+                <label><input type="radio" name="q4" value="c"> Acne Grau III: cravos, espinhas pequenas, e lesões maiores, profundas e inflamadas.</label>
+                <label><input type="radio" name="q4" value="d"> Acne Grau IV: cravos, espinhas pequenas, grandes lesões císticas e cicatrizes irregulares.</label>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Ver Resultados</button>
+        </form>
+        <div id="results" class="hidden"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
